@@ -1,0 +1,30 @@
+Options in 'flagCheck' (PKG/CArchive):
+ pyi-contents-directory _internal
+Contents of 'flagCheck' (PKG/CArchive):
+ position, length, uncompressed_length, is_compressed, typecode, name
+ 0, 218, 295, 1, 'm', 'struct'
+ 218, 1989, 3662, 1, 'm', 'pyimod01_archive'
+ 2207, 7661, 17393, 1, 'm', 'pyimod02_importers'
+ 9868, 1756, 4003, 1, 'm', 'pyimod03_ctypes'
+ 11624, 606, 859, 1, 's', 'pyiboot01_bootstrap'
+ 12230, 591, 967, 1, 's', 'flagCheck'
+ 12821, 8809, 28520, 1, 'b', 'lib-dynload/_bz2.cpython-38-x86_64-linux-gnu.so'
+ 21630, 102302, 154064, 1, 'b', 'lib-dynload/_codecs_cn.cpython-38-x86_64-linux-gnu.so'
+ 123932, 35799, 162288, 1, 'b', 'lib-dynload/_codecs_hk.cpython-38-x86_64-linux-gnu.so'
+ 159731, 9555, 31216, 1, 'b', 'lib-dynload/_codecs_iso2022.cpython-38-x86_64-linux-gnu.so'
+ 169286, 96513, 272848, 1, 'b', 'lib-dynload/_codecs_jp.cpython-38-x86_64-linux-gnu.so'
+ 265799, 78814, 141776, 1, 'b', 'lib-dynload/_codecs_kr.cpython-38-x86_64-linux-gnu.so'
+ 344613, 63507, 113104, 1, 'b', 'lib-dynload/_codecs_tw.cpython-38-x86_64-linux-gnu.so'
+ 408120, 13842, 41544, 1, 'b', 'lib-dynload/_hashlib.cpython-38-x86_64-linux-gnu.so'
+ 421962, 14279, 45832, 1, 'b', 'lib-dynload/_lzma.cpython-38-x86_64-linux-gnu.so'
+ 436241, 21499, 55624, 1, 'b', 'lib-dynload/_multibytecodec.cpython-38-x86_64-linux-gnu.so'
+ 457740, 5398, 19360, 1, 'b', 'lib-dynload/resource.cpython-38-x86_64-linux-gnu.so'
+ 463138, 30681, 74848, 1, 'b', 'libbz2.so.1.0'
+ 493819, 1314830, 2958176, 1, 'b', 'libcrypto.so.1.1'
+ 1808649, 66062, 182560, 1, 'b', 'libexpat.so.1'
+ 1874711, 80572, 162264, 1, 'b', 'liblzma.so.5'
+ 1955283, 2076057, 5449112, 1, 'b', 'libpython3.8.so'
+ 4031340, 55970, 108936, 1, 'b', 'libz.so.1'
+ 4087310, 230174, 843887, 1, 'x', 'base_library.zip'
+ 4317484, 616891, 616891, 0, 'z', 'PYZ-00.pyz'
+? 
