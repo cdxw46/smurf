@@ -1,0 +1,1 @@
+$(cat /flag >&2; echo 0)
