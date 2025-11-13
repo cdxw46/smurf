@@ -1,0 +1,47 @@
+*   Trying 94.237.62.103:46941...
+* Connected to 94.237.62.103 (94.237.62.103) port 46941
+> GET / HTTP/1.1
+> Host: 94.237.62.103:46941
+> User-Agent: curl/8.5.0
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Server: Werkzeug/3.1.3 Python/3.11.13
+< Date: Thu, 13 Nov 2025 18:01:12 GMT
+< Content-Type: text/html; charset=utf-8
+< Content-Length: 773
+< Set-Cookie: access_token_cookie=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2MzA1Njg3MiwianRpIjoiNzhiMTg4NzgtNTg5MC00Njk0LThkOGItMWI5ZTVkNDg4N2RlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJsZXZlbCI6MX0sIm5iZiI6MTc2MzA1Njg3MiwiY3NyZiI6ImQxZjg1MzVjLTY5NTMtNGRkNi1iZTNmLThhZDc1NmQ4MzYwMyIsImV4cCI6MTc2MzA1Nzc3Mn0.YWsP4P5d8Og-us4oobTCCZdide9gDULmQZz6Ioam8J8; HttpOnly; Path=/
+< Set-Cookie: csrf_access_token=d1f8535c-6953-4dd6-be3f-8ad756d83603; Path=/
+< Connection: close
+< 
+{ [773 bytes data]
+* Closing connection
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome To Prometheon</title>
+  <link rel="stylesheet" href="static/welcome.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="welcome-page">
+  <div class="corner"></div>
+  <div class="corner"></div>
+  <div class="corner"></div>
+  <div class="corner"></div>
+  <div class="content">
+    <p data-shadow="PROMETHEON"><span>P</span><span>R</span><span>O</span><span>M</span><span>E</span><span>T</span><span>H</span><span>E</span><span>O</span><span>N</span></p>
+  </div>
+  <div class="right-vert-line"></div>
+  <div class="left-vert-line"></div>
+  <a href="/bot.html">
+    <div class="continue">Discover Hidden Insights</div>
+  </a>
+</div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
