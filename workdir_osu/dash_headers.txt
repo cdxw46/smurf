@@ -1,0 +1,21 @@
+HTTP/2 302 
+date: Sat, 15 Nov 2025 19:13:39 GMT
+content-type: text/html; charset=UTF-8
+content-length: 0
+location: ./
+server: openresty/1.27.1.2
+set-cookie: token=ODY0NTZmODRiNzE5NWNmZTFmNjhhZDNjYzJlZGE2NTljNTNiZjk2N2YxODhjMTU2YmM2MmVkNDI0ZWZkMTg0MThmYTA3Y2RlZmY4MzRjNDZmZGRhMDdkYjA4MWQ4YzVjMjFlZmM3ZDkyNmUzYjkwZWExNzk4NmEwNzRiMGYwNmQ%3D; expires=Sun, 16-Nov-2025 19:13:39 GMT; Max-Age=86400; path=/
+
+HTTP/2 302 
+date: Sat, 15 Nov 2025 19:13:39 GMT
+content-type: text/html; charset=UTF-8
+content-length: 0
+location: login
+server: openresty/1.27.1.2
+
+HTTP/2 200 
+date: Sat, 15 Nov 2025 19:13:39 GMT
+content-type: text/html; charset=UTF-8
+server: openresty/1.27.1.2
+vary: Accept-Encoding
+
