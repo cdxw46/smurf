@@ -1,0 +1,10 @@
+admin
+dashboard
+grades
+students
+api/grades
+api/students
+student/1
+portal
+profile
+js/routes.js
