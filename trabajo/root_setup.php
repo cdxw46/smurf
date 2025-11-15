@@ -1,0 +1,9 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /setup.php was not found on this server.</p>
+<hr>
+<address>Apache/2.4.7 (Ubuntu) Server at 64914da4faaa468326dbfd132d9ba09b.ctf.hacker101.com Port 80</address>
+</body></html>
