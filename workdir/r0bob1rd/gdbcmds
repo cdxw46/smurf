@@ -1,0 +1,8 @@
+set pagination off
+set breakpoint pending on
+b *0x400bf3
+run < input.txt
+info register rbp
+info register rsp
+x/40gx $rsp
+quit
