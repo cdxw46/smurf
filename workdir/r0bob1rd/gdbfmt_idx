@@ -1,0 +1,6 @@
+set pagination off
+set breakpoint pending on
+b *0x400bf3
+run < idx_input
+x/30gx $rsp
+quit
