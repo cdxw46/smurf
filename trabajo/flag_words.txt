@@ -1,0 +1,14 @@
+flag
+flag2
+flag3
+flag_admin
+flag_user
+flag_secret
+flaghidden
+secret
+secrets
+flaghome
+flagpost
+flagfile
+flagfinal
+flaglast

