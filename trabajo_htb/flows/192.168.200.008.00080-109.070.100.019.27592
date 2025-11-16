@@ -1,0 +1,65 @@
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Server: Microsoft-IIS/8.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Tue, 12 Nov 2019 19:57:26 GMT
+Content-Length: 989
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	File Upload Control
+</title></head>
+<body>
+    <form method="post" action="upload.aspx" id="form1" enctype="multipart/form-data">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTI3ODM5MzQ0Mg9kFgICAw8WAh4HZW5jdHlwZQUTbXVsdGlwYXJ0L2Zvcm0tZGF0YWRkipLmImNMiRpVND7fQy3VOAStf8Ixs/BocNqoZTBNFPc=" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAALzGrNxVeRYD8mD3od5SkIh5vhDofrSSRcWtmHPtJVt4IXmSdzQlTwCZSO0Y5RVegieRRacuS8Ehow/e4k5mfsD" />
+</div>
+    <div>
+    <input type="file" name="fuSample" id="fuSample" />
+    <input type="submit" name="btnUpload" value="Upload" id="btnUpload" />
+            <span id="lblMessage"></span>
+    </div>
+    </form>
+</body>
+</html>HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Server: Microsoft-IIS/8.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Tue, 12 Nov 2019 19:57:58 GMT
+Content-Length: 1071
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	File Upload Control
+</title></head>
+<body>
+    <form method="post" action="upload.aspx" id="form1" enctype="multipart/form-data">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTI3ODM5MzQ0Mg9kFgICAw8WAh4HZW5jdHlwZQUTbXVsdGlwYXJ0L2Zvcm0tZGF0YRYCAgUPDxYCHgRUZXh0BRpGaWxlIFN1Y2Nlc3NmdWxseSBVcGxvYWRlZGRkZJs9/Lgcs0glhO3MR9VFCW5J8q8eSGZeb/IXfLLPuUqs" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAALA9PyVQykg4eDUPIApbq9M5vhDofrSSRcWtmHPtJVt4CsK3W2QZBHNSXlIPiJU0D0JzF39zBe7U4BXnEAk7pO0" />
+</div>
+    <div>
+    <input type="file" name="fuSample" id="fuSample" />
+    <input type="submit" name="btnUpload" value="Upload" id="btnUpload" />
+            <span id="lblMessage">File Successfully Uploaded</span>
+    </div>
+    </form>
+</body>
+</html>
