@@ -1,0 +1,15 @@
+Remote ICS Plant
+(Target) The "Remote Interface" enables
+; ; ; ti we ; (Host)
+Serial modbus connection to transmit N communication with the serial modbus (C
+anon commands to the PLCs network (¢
+woe (2)
+PLC-1 Laptop-2 a) Laptop-1
+Slave Address: 82 (decimal) ptop ptop
+The PLC device described with the Converts received modbus packet into a valid packet Sends modbus commands that Laptop-2
+provided Ladder Logic diagram (with CRC) and forwards into the real modbus RTU will forward into the main network to
+network perform operations in the infrastructure
+Adress (decimal)
+(1) Send modbus command to Laptop-2
+(2) Calculate CRC and forward modbus RTU command on the real network 1336
+PLC-1 Coil Addresses in the modbus network
