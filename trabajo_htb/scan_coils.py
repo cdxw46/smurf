@@ -3,6 +3,8 @@ import socket
 import json
 import re
 import sys
+import time
+
 HOST="83.136.253.5"
 PORT=53558
 
@@ -45,17 +47,21 @@ def write_coil(addr, value):
     cmd=f"5205{addr:04X}{value_bytes}"
     send_modbus(cmd)
 
-def main(start, end):
+def main(start, end, delay):
     base=fetch_status()
     for addr in range(start, end+1):
         write_coil(addr, 1)
+        time.sleep(delay)
         after=fetch_status()
         changes={k:(base.get(k), after.get(k)) for k in sorted(after) if after.get(k)!=base.get(k)}
         print(f"Address {addr}: {changes}")
         write_coil(addr, 0)
+        time.sleep(delay)
         base=fetch_status()
+
 if __name__=="__main__":
-    if len(sys.argv)!=3:
-        print(f"Usage: {sys.argv[0]} START END")
+    if len(sys.argv) not in (3,4):
+        print(f"Usage: {sys.argv[0]} START END [DELAY_SECONDS]")
         sys.exit(1)
-    main(int(sys.argv[1]), int(sys.argv[2]))
+    delay=float(sys.argv[3]) if len(sys.argv)==4 else 0.3
+    main(int(sys.argv[1]), int(sys.argv[2]), delay)

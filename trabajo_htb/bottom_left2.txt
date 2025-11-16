@@ -1,0 +1,2 @@
+(1) Send modbus command to Laptop-2
+(2) Calculate CRC and forward modbus RTU command on the real network
