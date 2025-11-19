@@ -1,4 +1,5 @@
-const_hex = '2e6e40681d53657c175816436d5862366f436230016347333f6314636d7a'
+flag = bytes.fromhex('7069636f4354467b245f3544335f4131314441375f646434616437643310')
+length = len(flag)
 
 
 def swap_blocks(buf, block):
@@ -12,9 +13,11 @@ def swap_blocks(buf, block):
     return bytes(data)
 
 
-def apply_sequence(data, seq):
-    out = bytes(data)
-    for block in seq:
+def scramble(buf, direction):
+    out = bytes(buf)
+    n = len(out)
+    blocks = range(1, n + 1) if direction > 0 else range(n - 1, 0, -1)
+    for block in blocks:
         out = swap_blocks(out, block)
     return out
 
@@ -33,12 +36,13 @@ def txor(buf, length):
         cur = (cur + step) & 0xffffffff
     return bytes(out)
 
+const_hex = '7a2e6e681d65167c6d436f36636214474363406358015833623f53306d17'
+const_bytes = bytes.fromhex(const_hex)
+B_hex = '2e6e40681d53657c175816436d5862366f436230016347333f6314636d7a'
+B = bytes.fromhex(B_hex)
 
-B = bytes.fromhex(const_hex)
-stage1 = apply_sequence(B, range(1, len(B)))
-stage2 = apply_sequence(stage1, range(len(B), 0, -1))
-flag = txor(stage2, len(B))[:len(B)]
-print(flag)
-print(flag.decode('ascii', errors='replace'))
-print(flag.hex())
-EOF}
+stage1 = txor(flag, length)
+stage2 = scramble(stage1[:length], 1)
+print('stage2 == const?', stage2 == const_bytes)
+B_user = scramble(stage2, -1)
+print('B_user == B?', B_user == B)
