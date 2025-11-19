@@ -1,0 +1,12 @@
+HTTP/2 400 
+cache-control: public, max-age=0, must-revalidate
+content-type: application/json; charset=utf-8
+date: Wed, 19 Nov 2025 17:47:33 GMT
+etag: "m0wqwz9g9iv"
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-matched-path: /api/signup
+x-vercel-cache: MISS
+x-vercel-id: iad1::iad1::vvfv5-1763574453851-d01c7702a12d
+content-length: 31
+

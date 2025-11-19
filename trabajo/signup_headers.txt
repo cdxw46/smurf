@@ -1,0 +1,13 @@
+HTTP/2 200 
+cache-control: public, max-age=0, must-revalidate
+content-type: application/json; charset=utf-8
+date: Wed, 19 Nov 2025 17:31:54 GMT
+etag: "17a6zzdutk1g"
+server: Vercel
+set-cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0dXNlciIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzYzNTczNTE0LCJleHAiOjE3NjM1NzcxMTR9.oUKVa8--IfW2XnddLKwa3whLPX_iCerQvIKBLHHEEKg; HttpOnly; Path=/; SameSite=Lax
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-matched-path: /api/signup
+x-vercel-cache: MISS
+x-vercel-id: iad1::iad1::kzv68-1763573513957-b5d79f3ffe54
+content-length: 16
+
