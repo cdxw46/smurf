@@ -1,0 +1,8 @@
+HTTP/1.1 302 FOUND
+Server: Werkzeug/3.0.3 Python/3.12.4
+Date: Wed, 19 Nov 2025 13:51:01 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 387
+Location: https://dummy-payment-processor.htb/pay?amount=0&payment_id=164cecbf-5481-4f08-93eb-a9a01a69052d
+Connection: close
+
