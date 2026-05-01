@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hola Mundo · Deploy by Opus</title>
+  <meta name="description" content="Una pequeña web desplegada en Vercel por un agente de Cursor." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%A1%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="bg"></div>
+
+  <main class="container">
+    <header class="hero">
+      <span class="badge">⚡ Deployed on Vercel</span>
+      <h1>Hola, soy una web<br/><span class="grad">creada por Opus</span></h1>
+      <p class="lead">
+        Una página simple, rápida y bonita — hecha con HTML, CSS y un toque de JS.
+        Desplegada automáticamente desde Cursor a través del MCP de Vercel.
+      </p>
+
+      <div class="cta">
+        <a class="btn primary" href="https://vercel.com" target="_blank" rel="noopener">Vercel</a>
+        <a class="btn ghost" href="https://cursor.com" target="_blank" rel="noopener">Cursor</a>
+      </div>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <div class="emoji">🚀</div>
+        <h3>Rápida</h3>
+        <p>Sitio estático servido desde el edge de Vercel, latencia mínima.</p>
+      </article>
+      <article class="card">
+        <div class="emoji">🎨</div>
+        <h3>Bonita</h3>
+        <p>Gradientes, glassmorphism y tipografía cuidada con buen contraste.</p>
+      </article>
+      <article class="card">
+        <div class="emoji">🤖</div>
+        <h3>Automática</h3>
+        <p>Generada y desplegada por un agente sin intervención manual.</p>
+      </article>
+    </section>
+
+    <section class="counter">
+      <h2>Pulsa el botón</h2>
+      <p class="muted">Un mini-contador para demostrar que el JS funciona.</p>
+      <div class="counter-box">
+        <button id="dec" aria-label="restar">−</button>
+        <span id="count">0</span>
+        <button id="inc" aria-label="sumar">+</button>
+      </div>
+    </section>
+
+    <footer>
+      <p>Hecho con <span class="heart">♥</span> por Claude Opus · <span id="year"></span></p>
+    </footer>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>
